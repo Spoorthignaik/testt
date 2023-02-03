@@ -1,0 +1,72 @@
+1..class reverseString{
+	public static void main(String[] args){
+		String name="spoorthi";
+		for(int i<name.length()-1 i>=0; i--){
+             System.out.println(name.charAt(i)
+		}
+	}
+}
+
+
+
+2..class Fabonacci{
+	public static void main(String[] args){
+        int a=0;
+        int	b=1;
+        int result=a+b;
+        System.out.println(a);
+        System.out.println(b);
+
+       while(result<100){
+	    a=b;
+	    b=result;
+	    result=a+b;
+   }
+  }
+}
+
+4..class Prime{
+	public static void main(String[] args){
+		int a=4;
+		boolean prime=true;
+		for(int i=2;i<a;i++) {
+			if(a%2==0) {
+				prime=false;
+				break;
+			}
+		 }
+		if(prime) {
+			System.out.println("it is prime number :"+a);
+		}
+		else{
+			System.out.println("it is not prime :"+a);
+		}	
+	}
+}
+
+
+
+5..class Palindrome{
+	public static void main(String[] args){
+		
+		int num=151;
+		int temp=num;
+		int rev=0;
+		while(num>0)
+		{
+			int last=num%10;
+			num=num/10;
+			rev=(rev*10)+last;	
+		}
+		
+		if(rev==temp)
+		{
+			System.out.println("it is a palindrome="+temp);
+		}
+		
+		else {
+			System.out.println("it is not a palindrome"+temp);
+		}
+	}
+}
+
